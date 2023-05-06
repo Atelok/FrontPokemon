@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0aceae09.css",
+    "main.js": "/static/js/main.6a2d799a.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/sparkles.gif": "/static/media/sparkles.6aa4315d98f66b6c855a.gif",
+    "static/media/background-elegant-black.png": "/static/media/background-elegant-black.57d376a0df137792525d.png",
+    "static/media/banner-dorado.png": "/static/media/banner-dorado.e917f0ffa0355768074e.png",
+    "static/media/holo.png": "/static/media/holo.a6e9cabde4dd01fa4f69.png",
+    "static/media/charmander.png": "/static/media/charmander.67b2053ce0d5ca5e2001.png",
+    "static/media/pikachu-poke.png": "/static/media/pikachu-poke.62f719d3ed9ef601ca1d.png",
+    "static/media/MontserratAlternates-Bold.otf": "/static/media/MontserratAlternates-Bold.02f7d4418906684e7213.otf",
+    "static/media/Logo y frase -Pokemon.png": "/static/media/Logo y frase -Pokemon.ba6096afcc161ebf5a90.png",
+    "static/media/mew-Poke.png": "/static/media/mew-Poke.519f1cf2675a54dca2e7.png",
+    "static/media/Creacion-Poke-Defecto.png": "/static/media/Creacion-Poke-Defecto.e08fe0e3958b4d034c2b.png",
+    "static/media/shield.png": "/static/media/shield.da1718bb4fac6dee5003.png",
+    "static/media/sword.png": "/static/media/sword.71ca564b9c43aa79031d.png",
+    "static/media/Esfera-pokemon3.png": "/static/media/Esfera-pokemon3.6d7db000ebdf6db61de3.png",
+    "static/media/weight.png": "/static/media/weight.47e77213857af3299512.png",
+    "static/media/running_shoe.png": "/static/media/running_shoe.6dd789ad08d883a06060.png",
+    "static/media/sonidoPika.mp3": "/static/media/sonidoPika.05666a6a8394d05ddf96.mp3",
+    "static/media/pokemon-maplerose.webp": "/static/media/pokemon-maplerose.43e3e55ac108a62b2076.webp",
+    "static/media/heart.png": "/static/media/heart.3b8c5628cf2a02599312.png",
+    "static/media/height.png": "/static/media/height.23614b6c75714a0e2537.png",
+    "index.html": "/index.html",
+    "main.0aceae09.css.map": "/static/css/main.0aceae09.css.map",
+    "main.6a2d799a.js.map": "/static/js/main.6a2d799a.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aceae09.css",
+    "static/js/main.6a2d799a.js"
+  ]
+}

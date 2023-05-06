@@ -1,0 +1,504 @@
+html {
+    /* background: linear-gradient(to bottom right, #ed1c24, #fdef08, #3776bc, #55aaff, #55aaff, #3776bc, #fdef08, #ed1c24); */
+    background-attachment: fixed;
+}
+
+
+.PokemonList {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*AQUI VA LOS DOS FILTER Y ORDER, QUE ESTAN A LA IZQUIERDA*/
+.IzquierdaFilterOrder {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url("./img/background-elegant-black.png");
+    width: 100%;
+    height: 200px;
+    margin-top: 6rem;
+
+}
+
+.hola_de_nuevo {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    max-width: 800px;
+    padding-left: 40px;
+    margin: 20px 0;
+
+}
+
+/**/
+
+
+.Filterpoke_OrderPoke {
+    display: flex;
+    width: 1000px;
+    max-width: 1000px;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    align-items: center;
+    background-color: #00000096;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: aliceblue;
+    margin-right: 80px;
+    margin-top: 50px;
+    outline: 2px solid #ccc;
+    /*contornoexterior*/
+    outline-offset: -5px;
+    /*distanciadelcontornointerior*/
+    border: 1px solid #ccc;
+
+}
+
+
+/* ORDENAR ASCEDENTE Y DESCENDENTE*/
+.ordenar_Asc_Desc {
+    display: flex;
+    justify-content: center;
+
+}
+
+.div_button_order {
+    display: inline-block;
+    margin: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #596157, #292122);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px #8d8d8d;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.div_button_order:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 0px #8d8d8d;
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+}
+
+.div_button_order:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #000000, #acb4b6);
+}
+
+.div_button_order:before,
+.div_button_order:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.div_button_order:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+
+}
+
+.div_button_order:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+
+}
+
+
+/**/
+
+
+
+
+/* MODULO DE FILTERPOKEMONS*/
+.Filtrados {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #55aaff; */
+    height: 20px;
+    justify-content: space-around;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/**/
+
+
+.div_filtrados {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+.div_hola {
+    height: 100px;
+    /* max-height: 2vh; */
+}
+
+
+/* HOLA - REFRESH DIV */
+.Pokemonlist_hola_refresh {
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.281); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    height: 170px;
+    padding-top: 10px;
+    font-family: Monserrat;
+}
+
+
+
+.div_boton_refresh {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 5;
+
+}
+
+.div_botones {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+
+    padding: 20px 0;
+}
+
+
+
+/* AQUI VAN EL DIV DE LOS BOTONES DE ORDENAR */
+.orderPokemon {
+    /* background-color: #ed1c24; */
+    /* max-width: 200px; */
+    max-height: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* margin-top: 25px; */
+}
+
+/*-------------------------------------------*/
+
+
+
+
+
+/* NUMBERLIST */
+/*PAGINADO DEL UL  EN numberList*/
+.paginado_Ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* AQUI VA EL LI*/
+.paginado_Li button {
+    text-decoration: none;
+    height: 45px;
+}
+
+/*div de hola y de paginado*/
+.div_PokemonList {
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+
+}
+
+
+/* PARTE DE ABAJO CARDS Y LA IMAGEN QUE SE PONDRA */
+
+.cards_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*********************AQUI BOTONES DE PAGINADO********************************/
+
+/*BOTON IZQUIERDO*/
+.boton_prev {
+    max-width: 150px;
+    width: 130px;
+    height: 45px;
+    --green: #ffffff;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 70px 0 0 70px;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, #3f46431a 1%, transparent 40%, transparent 60%, #3f46431a 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px #3f46431a, 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    background-color: hsla(0, 0%, 3%, 0.9);
+}
+
+
+.boton_prev:hover {
+    scale: 1.02;
+    color: #ffffff;
+    box-shadow: inset 0 0 10px #3e464299, 0 0 9px 3px #ffffff33;
+}
+
+.boton_prev:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, #1fd7e8df 40%, #1fd7e8df 60%, transparent 100%);
+}
+
+.boton_prev:hover:before {
+    transform: translateX(15em);
+    -webkit-transform: translateX(15em);
+    -moz-transform: translateX(15em);
+    -ms-transform: translateX(15em);
+    -o-transform: translateX(15em);
+}
+
+
+/*------*/
+.boton_prev2 {
+    max-width: 150px;
+    width: 130px;
+    height: 45px;
+    --green: #646464;
+    font-size: 14.5px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 70px 0 0 70px;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    color: var(--green);
+    background-color: #4f4f4f6b;
+}
+
+/*------*/
+
+
+
+
+
+/*BOTON DERECHO*/
+.boton_next {
+    max-width: 150px;
+    width: 130px;
+    height: 45px;
+    --green: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0px 70px 70px 0px;
+
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, #3f46431a 1%, transparent 40%, transparent 60%, #3f46431a 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px #3f46431a, 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    -webkit-border-radius: 0px 70px 70px 0px;
+    -moz-border-radius: 0px 70px 70px 0px;
+    -ms-border-radius: 0px 70px 70px 0px;
+    -o-border-radius: 0px 70px 70px 0px;
+    background-color: hsla(0, 0%, 0%, 0.9);
+}
+
+
+.boton_next:hover {
+    scale: 1.02;
+    color: #ffffff;
+    box-shadow: inset 0 0 10px #3e464299, 0 0 9px 3px #ffffff33;
+}
+
+.boton_next:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, #1fd7e8df 40%, #1fd7e8df 60%, transparent 100%);
+}
+
+.boton_next:hover:before {
+    transform: translateX(15em);
+    -webkit-transform: translateX(15em);
+    -moz-transform: translateX(15em);
+    -ms-transform: translateX(15em);
+    -o-transform: translateX(15em);
+}
+
+/**/
+.boton_next2 {
+    max-width: 150px;
+    width: 130px;
+    height: 45px;
+    --green: #646464;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0 70px 70px 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    color: var(--green);
+    -webkit-border-radius: 0 70px 70px 0;
+    -moz-border-radius: 0 70px 70px 0;
+    -ms-border-radius: 0 70px 70px 0;
+    -o-border-radius: 0 70px 70px 0;
+    background-color: #4f4f4f6b;
+}
+
+/**/
+
+
+
+
+select {
+    height: 30px;
+    background-color: #c97e7e49;
+    border: 1px solid cc272769;
+    color: #ff0000;
+    padding: 0 5px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* select:hover, select:focus {
+    outline: none;
+    border: 1px solid #666;
+  }
+   */
+select option {
+    color: #f11515be;
+    background-color: #c97e7e49;
+}
+
+/* button{
+    height: 30px;
+    background-color: #c97e7e49;
+    border: 1px solid cc272769;
+    color: #ff0000;
+    padding: 0 5px;
+    font-size: 14px;
+    border-radius: 4px;
+  } */
+
+
+
+
+
+
+
+/*----------------------------------------------------------------*/
+.boton_Refresh {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.boton_Refresh::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, #eaff00, #22ff00, blue, red, #eaff00, #22ff00, blue, red);
+    background-size: 800%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    -webkit-animation: glowing 20s linear infinite;
+}
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*------------------------------------------------------------*/

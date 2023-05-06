@@ -1,0 +1,217 @@
+/* AQUI ES EL DIV GENERAL DE EL FORMULARIO */
+.div_generalDelForm {
+    /*background-color: aqua;
+    */
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f78300; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-clip: content-box;
+    margin-top: 200px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+/* CUADRO DE DENTRO DE FORM */
+.cuadro_Form {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    /* margin: 20px; */
+}
+
+label {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+input[type="range"] {
+    width: 80%;
+    margin: 2px 0;
+    padding: 2px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+
+/* Estilos para el botón de enviar */
+.div_generalDelForm button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilos para los mensajes de error */
+.cuadro_Form p {
+    color: red;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+
+.loquecontieneel_Form {
+    /* background-color: blueviolet; */
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+.loquecontieneel_Form div {
+    padding-bottom: 15px;
+}
+
+
+/*LABEL CONTENEDOR DE LOS LABEL DE TYPES*/
+
+
+.div_contenedor_label {
+    display: grid;
+    /* background-color: rgb(255, 250, 250); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+
+}
+
+
+
+
+/* LABEL FORM DE LOS TYPES*/
+.label_Form {
+    background-color: rgb(16, 184, 235);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 3px;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.label_Form input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+.input_Height {
+    width: 50px;
+}
+
+
+.input_Weight {
+    width: 40px;
+}
+
+.charmander {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: 50px;
+    bottom: -50px;
+}
+
+.bulbasaur {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 50px;
+}
+
+.bulbasaur img {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* boton default */
+
+.btn_Default {
+    font-size: 14px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.btn_Default:focus,
+.btn_Default:hover {
+    color: #fff;
+}
+
+.btn_Default:focus:after,
+.btn_Default:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn_Default:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}

@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Monserrat;
+    src: url(../../Fonts/MontserratAlternates-Bold.otf);
+}
+
+
+.div_NavBar {
+    background-color: white;
+    /* border: 1px solid rgb(185, 42, 42); */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(90, 86, 86);
+    max-width: 100%;
+    width: 100%;
+    padding: 8px 0px;
+    position: fixed;
+    z-index: 1000;
+}
+.div_NavBar2 {
+    background-color: white;
+    /* border: 1px solid rgb(185, 42, 42); */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(90, 86, 86);
+    max-width: 100%;
+    width: 100%;
+    padding: 8px 0px;
+    z-index: 1000;
+}
+
+
+
+
+
+
+.Nav_Bar {
+    color: rgb(0, 0, 0);
+    font-family: Monserrat;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1px 0;
+
+}
+
+.HoFoAb {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+
+
+/* BOTON LOGOUT */
+
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+    text-decoration: none;
+}
+
+.btn:active {
+    scale: 0.92;
+}
+
+.btn:hover {
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, #1fd7e8df 60%);
+    color: rgb(4, 4, 38);
+}
+
+
+
+/* VERIFICAR DONDE ESTOY */
+
+.Nav_Bar2 {
+    font-weight: bold;
+    pointer-events: none;
+    color: red;
+}

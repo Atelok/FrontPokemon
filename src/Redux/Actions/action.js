@@ -6,7 +6,7 @@ import axios from "axios"
 const getAllPokemons = ()=>{
 
     return async function (dispatch) {
-        const json= await axios.get("http://localhost:3001/pokemons/");
+        const json= await axios.get("/pokemons/");
         const pokemon = json.data
         
         return dispatch({type:GET_ALL_POKEMONS, payload: pokemon});
@@ -18,7 +18,7 @@ const getAllPokemons = ()=>{
 const getPokemonId = (id)=>{
 
     return async function (dispatch) {
-        const json= await axios.get(`http://localhost:3001/pokemons/${id}`);
+        const json= await axios.get(`/pokemons/${id}`);
         const pokemon = json.data
         
         return dispatch({type:GET_POKEMON_ID, payload: pokemon});
@@ -30,7 +30,7 @@ const getPokemonId = (id)=>{
 const getTypes = ()=>{
 
     return async function(dispatch){
-        const json = await axios.get("http://localhost:3001/types/")
+        const json = await axios.get("/types/")
         const types = json.data
         return dispatch({type: TYPES_POKEMON, payload: types})
     }
@@ -75,7 +75,7 @@ const searchName = (name)=>{
 
     
     return async function(dispatch){
-        const json = await axios.get(`http://localhost:3001/pokemons/name?name=${name}`)
+        const json = await axios.get(`/pokemons/name?name=${name}`)
         const pokemon = json.data
         return dispatch({type: SEARCH_BY_NAME, payload: pokemon})
     }
@@ -89,7 +89,7 @@ const getPokemonId2 = (id)=>{
     return async function (dispatch) {
 
         if (id) {
-            const json= await axios.get(`http://localhost:3001/pokemons/${id}`);
+            const json= await axios.get(`/pokemons/${id}`);
             const pokemon = json.data
             return dispatch({type:GET_POKEMON_ID2, payload: pokemon});
         }

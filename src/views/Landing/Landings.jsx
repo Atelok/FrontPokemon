@@ -38,10 +38,10 @@ const Landing = () => {
   const seeMewImage = useSelector((state) => state.seeMewImage);
   const dispatch = useDispatch();
   useEffect(() => {
-    const temporizador = setTimeout(() => {
+    setTimeout(() => {
       dispatch(seeImage());
     }, 5000);
-  }, []);
+  }, [dispatch]);
 
   //OBTENER NOMBRE DE POKEMASTER
 

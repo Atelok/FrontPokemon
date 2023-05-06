@@ -8,7 +8,7 @@ import InputsForm from "./inputsForm.jsx";
 import useForm from "./UseForm";
 import charmander from "./img/charmander.png";
 
-import Alert from "../../extras/alert";
+// import Alert from "../../extras/alert";
 
 
 

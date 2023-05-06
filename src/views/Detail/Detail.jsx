@@ -17,7 +17,7 @@ const Detail = () => {
     dispatch(getPokemonId2(id));
 
     return dispatch(getPokemonId2(""))
-  }, []);
+  }, [dispatch, id]);
 
   const pokemonIds = useSelector((state) => state.pokemonId);
 
